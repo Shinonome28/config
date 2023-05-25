@@ -1,6 +1,3 @@
--- following options are the default
--- each of these are documented in `:help nvim-tree.OPTION_NAME`
-
 local status_ok, nvim_tree = pcall(require, "nvim-tree")
 if not status_ok then
     return
@@ -50,10 +47,8 @@ nvim_tree.setup {
     },
     view = {
         width = 30,
-        height = 30,
         hide_root_folder = false,
         side = "left",
-        auto_resize = true,
         mappings = {
             custom_only = false,
             list = {

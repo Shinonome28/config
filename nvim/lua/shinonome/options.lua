@@ -39,9 +39,11 @@ vim.cmd [[set iskeyword+=-]]
 -- remember last editing position (a magic!)
 vim.api.nvim_create_autocmd({ 'BufRead', 'BufReadPost' }, {
   callback = function()
+    -- get file mark 0 (the last time the cursor position read from viminfo)
     local row, column = unpack(vim.api.nvim_buf_get_mark(0, '"'))
     local buf_line_count = vim.api.nvim_buf_line_count(0)
 
+    -- prevent invalid settings
     if row >= 1 and row <= buf_line_count then
       vim.api.nvim_win_set_cursor(0, { row, column })
     end
