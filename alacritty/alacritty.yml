@@ -13,10 +13,6 @@ font:
     style: Bold Italic
 
   size: 11.0
-  decorations: none
-  startup_mode: Maximized
-  title: "Shinonome's Shell"
-  dynamic_title: true
 
   offset:
     x: 0
@@ -29,6 +25,10 @@ window:
   padding:
     x: 2
     y: 2
+  decorations: none
+  startup_mode: Maximized
+  title: "Shinonome's Shell"
+  dynamic_title: true
   opacity: 0.95
 
 scrolling:
