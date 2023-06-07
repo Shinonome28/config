@@ -25,7 +25,6 @@ window:
   padding:
     x: 2
     y: 2
-  decorations: none
   startup_mode: Maximized
   title: "Shinonome's Shell"
   dynamic_title: true
