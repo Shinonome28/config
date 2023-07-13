@@ -1,0 +1,10 @@
+#!/bin/sh 
+
+cmd="sudo pacman -R --noconfirm $(pacman -Qdtq)"
+$cmd
+while [[ $? -eq 0 ]]; do
+  cmd="sudo pacman -R --noconfirm $(pacman -Qdtq)"
+  $cmd
+done
+
+  
